@@ -1,12 +1,6 @@
-pragma solidity ^0.8.2;
+pragma solidity 0.5.2;
 
-//*******************************************************************//
-//------------------------ SafeMath Library -------------------------//
-//*******************************************************************//
-/**
- * @title SafeMath
- * @dev Math operations with safety checks that throw on error
- */
+
 library SafeMath {
   function mul(uint256 a, uint256 b) internal pure returns (uint256) {
     if (a == 0) {
@@ -36,10 +30,6 @@ library SafeMath {
   }
 }
 
-
-//*******************************************************************//
-//------------------ Contract to Manage Ownership -------------------//
-//*******************************************************************//
     
 contract owned {
     address payable public owner;
